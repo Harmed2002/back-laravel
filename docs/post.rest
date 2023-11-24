@@ -1,0 +1,29 @@
+### Login
+POST http://127.0.0.1:8000/api/login
+Accept: application/json
+Content-Type: application/json
+
+{
+    "email": "admin@mail.com",
+    "password": "admin54321"
+}
+
+
+### Modificar post
+POST http://127.0.0.1:8000/api/posts/1
+Content-Type: application/json
+Accept: application/json
+Authorization: "Bearer " + "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzAwNjc3MzYzLCJleHAiOjE3MDA2ODA5NjMsIm5iZiI6MTcwMDY3NzM2MywianRpIjoiZm5HZ1ptcENiWXp5UnVFRiIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.axXIIv_w3jGlHuK3dKpmdSU8J5uZmU84-ER6ftD53kc"
+
+{
+    "id": 1,
+    "title": "PRUEBA1",
+    "content": "PRUEBA2"
+}
+
+
+### Eliminar post
+POST http://127.0.0.1:8000/api/post/1
+Content-Type: application/json
+Accept: application/json
+Authorization: "Bearer " + "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzAwNzEyMDE5LCJleHAiOjE3MDA3MTU2MTksIm5iZiI6MTcwMDcxMjAxOSwianRpIjoienpTWUR6SThMYTZOMHdqRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.6HYRqvq8mtjZzNofMbQKB5E__X50Vr4VinfWlZgowAU"
